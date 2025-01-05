@@ -3,6 +3,7 @@ import { withSentryConfig } from '@sentry/nextjs';
 const nextConfig = {
   basePath: '/Satyam_Portfolio',
   assetPrefix: '/Satyam_Portfolio/',
+  output: 'export', // Add this line
 };
 
 export default withSentryConfig(nextConfig, {
