@@ -1,4 +1,18 @@
 export const navItems = [
+  { 
+    name: "Home", 
+    link: "#home",
+    onClick: (e: React.MouseEvent) => {
+      e.preventDefault();
+      const heroSection = document.getElementById('home');
+      if (heroSection) {
+        heroSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
@@ -8,10 +22,10 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Hi, I'm Satyam Sharma, an AI Researcher at the Commonwealth Secretariat in London, specializing in bridging cutting-edge artificial intelligence with practical software solutions. With deep expertise in Generative AI, large language models (LLMs), Machine Learning and full-stack development, I transform complex AI technologies into impactful, real-world applications that drive innovation and solve meaningful challenges.",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative",
+    imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
@@ -28,38 +42,38 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Core tech stack",
+    description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
   },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
+  
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    description: "I constantly evolve my tech stack to bridge cutting-edge AI with robust full-stack solutions",
+    title: "",
+    className: "md:col-span-4 md:row-span-1",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
   },
   {
     id: 6,
     title: "Do you want to start a project together?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 7,
+    title: "Want to know more about my experience?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",

@@ -1,9 +1,9 @@
 import { withSentryConfig } from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/Satyam_Portfolio',
-  assetPrefix: '/Satyam_Portfolio/',
-  output: 'export', // Add this line
+  basePath: process.env.NODE_ENV === 'production' ? '/Satyam_Portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Satyam_Portfolio/' : '',
+  output: 'export',
 };
 
 export default withSentryConfig(nextConfig, {

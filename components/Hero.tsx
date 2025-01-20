@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <section id="home" className="min-h-screen pt-20 scroll-mt-20">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            
           </p>
 
           {/**
@@ -52,13 +52,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Blending Full-Stack Expertise with Cutting-Edge AI Solutions"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Satyam Sharma, a Next.js Developer based in London, United Kingdom.
-          </p>
+            Hi! I&apos;m Satyam, a versatile Software Developer and AI Specialist based in London, United Kingdom. </p>
 
           <a href="#about">
             <MagicButton
@@ -69,7 +68,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline, IoDownloadOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
@@ -52,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Python", "Docker"];
+  const rightLists = ["Langchain", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "satyam3196@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -121,20 +121,48 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative min-h-40 flex flex-col px-5 p-5 lg:p-10 w-full"
           )}
         >
-          {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight text-sm md:text-xs lg:text-base text-[#C1C2D3] z-10">
             {description}
           </div>
-          {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-          {/* remove mb-2 mt-2 */}
-          <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
-          >
-            {title}
-          </div>
+          
+          {id === 5 ? (
+            <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
+              <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Deep Learning</span>
+                  <span className="text-white font-light">PyTorch, TensorFlow, Keras</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Frontend</span>
+                  <span className="text-white font-light">Vue.js, TypeScript, JavaScript</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Backend</span>
+                  <span className="text-white font-light">FastAPI, Express.js, Node.js</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Databases</span>
+                  <span className="text-white font-light">PostgreSQL, MongoDB, Redis</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
+                  <span className="text-white font-light">Azure, Git, CI/CD, AWS</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
+                  <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI</span>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className={`font-sans text-lg lg:text-3xl font-bold z-10`}>
+              {title}
+            </div>
+          )}
 
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
@@ -190,6 +218,33 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+            </div>
+          )}
+          {id === 7 && (
+            <div className="z-10 space-y-4 h-full bg-[#04071D] p-6 rounded-3xl">
+              <BackgroundGradientAnimation>
+                <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+                </div>
+              </BackgroundGradientAnimation>
+              
+              <div className={cn(
+                titleClassName,
+                "group-hover/bento:translate-x-2 transition duration-200 relative min-h-40 flex flex-col px-5 p-5 lg:p-10 w-full"
+              )}>
+                <div className={`font-sans text-lg lg:text-3xl font-bold z-10 text-center`}>
+                  {title}
+                </div>
+                
+                <div className="mt-5 relative flex justify-center">
+                  <MagicButton
+                    title="Download my resume"
+                    icon={<IoDownloadOutline />}
+                    position="left"
+                    handleClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
+                    otherClasses="!bg-[#161A31]"
+                  />
+                </div>
+              </div>
             </div>
           )}
         </div>
