@@ -31,7 +31,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-end",
-    img: "/bg.png",
+    img: getImagePath("bg.png"),
     spareImg: "",
   },
   {
@@ -211,7 +211,7 @@ export const workExperience = [
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     date: "Nov 2023 - Present",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: getImagePath("exp1.svg"),
   },
   {
     id: 2,
@@ -220,7 +220,7 @@ export const workExperience = [
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     date: "Feb 2024 - May 2024",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: getImagePath("exp2.svg"),
   },
   {
     id: 3,
@@ -229,7 +229,7 @@ export const workExperience = [
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",    
     date: "July 2023 - October 2023",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: getImagePath("exp3.svg"),
   },
   {
     id: 4,
@@ -238,7 +238,7 @@ export const workExperience = [
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     date: "Feb 2022 - July 2022",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: getImagePath("exp4.svg"),
   },
 ];
 
