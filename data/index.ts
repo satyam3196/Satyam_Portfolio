@@ -1,3 +1,5 @@
+import { getImagePath } from '@/lib/imageLoader';
+
 export const navItems = [
    { 
      name: "Home", 
@@ -75,13 +77,13 @@ export const projects = [
     id: 1,
     title: "ReceiptHub",
     des: "An AI-powered expense tracking application that streamlines receipt management for small businesses. Built with NVIDIA NIM (Mixtral-8x22B), LlamaParse, Streamlit, and Flask.",
-    img: "/project1.png",
+    img: getImagePath("project1.png"),
     link: "https://github.com/satyam3196/ReceiptHub",
     iconLists: [
-      "/tech/python.png",
-      "/tech/nvidia.png",
-      "/tech/streamlit.png",
-      "/tech/flask.png",
+      getImagePath("tech/python.png"),
+      getImagePath("tech/nvidia.png"),
+      getImagePath("tech/streamlit.png"),
+      getImagePath("tech/flask.png"),
     ],
   },
   // {
@@ -96,12 +98,12 @@ export const projects = [
     id: 2,
     title: "PropPrice Insight",
     des: "A comprehensive machine learning project implementing 7 advanced models (XGBoost, AdaBoost, CatBoost, Random Forest, KNN, Neural Networks) for real estate price prediction. Features detailed performance analysis and feature importance visualizations using the H4M dataset.",
-    img: "/project2.png",
+    img: getImagePath("project2.png"),
     iconLists: [
-      "/tech/python.png",
-      "/tech/tensorflow.png",
-      "/tech/scikit.png",
-      "/tech/jupyter.png",
+      getImagePath("tech/python.png"),
+      getImagePath("tech/tensorflow.png"),
+      getImagePath("tech/scikit.png"),
+      getImagePath("tech/jupyter.png"),
     ],
     link: "https://github.com/satyam3196/PropPrice-Insight-Advanced-ML-Models-for-Real-Estate-Price-Prediction"
   },
@@ -109,12 +111,12 @@ export const projects = [
     id: 3,
     title: "Stock Analysis Web App",
     des: "A Django application that dynamically interacts with the YFinance REST API to display stock details, charts, and summaries based on user input. The app persists user data and login details in a PostgreSQL database, hosted on Railway Cloud.",
-    img: "/project3.png",
+    img: getImagePath("project3.png"),
     iconLists: [
-      "/tech/python.png",
-      "/tech/django.png",
-      "/tech/postgresql.png",
-      "/tech/javascript.png",
+      getImagePath("tech/python.png"),
+      getImagePath("tech/django.png"),
+      getImagePath("tech/postgresql.png"),
+      getImagePath("tech/javascript.png"),
     ],
     link: "https://github.com/satyam3196/Stock-Analysis-Web-App",
   },
@@ -122,11 +124,11 @@ export const projects = [
     id: 4,
     title: "Ethereum Transaction Analysis Project",
     des: "Analyzed transaction trends and evaluated the top 10 smart contracts and top 10 Ethereum miners by Ether received. Tracked and correlated scam activity with known scams going offline using a substantial dataset of 5 million rows. Utilized Apache Spark for advanced data manipulation, exploration, and visualization techniques on Ethereum blockchain data.",
-    img: "/project4.png",
+    img: getImagePath("project4.png"),
     iconLists: [
-      "/tech/spark.png",
-      "/tech/python.png",
-      "/tech/ethereum.png",
+      getImagePath("tech/spark.png"),
+      getImagePath("tech/python.png"),
+      getImagePath("tech/ethereum.png"),
     ],
     link: "https://github.com/satyam3196/spark-ethereum-transactions-analysis",
   },
@@ -160,6 +162,12 @@ export const achievements = [
     "name": "Featured Research in 'Applications of AI for Interdisciplinary Research'",
     "title": "Published AI Researcher",
 },
+  {
+    id: 1,
+    title: "NVIDIA NIM Hackathon Winner",
+    des: "Won first place in the NVIDIA NIM Hackathon for developing an innovative AI-powered receipt management solution.",
+    img: getImagePath("nvidia.png"),
+  },
 ];
 
 // export const companies = [
@@ -237,7 +245,7 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: getImagePath("git.svg"),
     url: "https://github.com/satyam3196",
   },
   // {
@@ -246,7 +254,7 @@ export const socialMedia = [
   // },
   {
     id: 2,
-    img: "/link.svg",
+    img: getImagePath("link.svg"),
     url: "https://www.linkedin.com/in/satyamsharma96",
   },
 ];
