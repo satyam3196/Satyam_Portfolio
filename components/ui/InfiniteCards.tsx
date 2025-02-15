@@ -4,6 +4,16 @@ import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import { getImagePath } from '@/lib/imageLoader';
 
+type AchievementItem = {
+  id?: number;
+  title?: string;
+  des?: string;
+  img?: string;
+  quote?: string;
+  name?: string;
+  project_link?: string;
+}
+
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
@@ -11,11 +21,7 @@ export const InfiniteMovingCards = ({
   pauseOnHover = true,
   className,
 }: {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
-  }[];
+  items: AchievementItem[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -112,22 +118,23 @@ export const InfiniteMovingCards = ({
               ></div>
               {/* change text color, text-lg */}
               <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                {item.quote}
+                {item.quote || item.des}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 {/* add this div for the profile img */}
                 <div className="me-3">
-                  <img src={getImagePath("profile.svg")} alt="profile" />
+                  {item.img && <img src={getImagePath(item.img)} alt="achievement" />}
                 </div>
                 <span className="flex flex-col gap-1">
                   {/* change text color, font-normal to font-bold, text-xl */}
                   <span className="text-xl font-bold leading-[1.6] text-white">
-                    {item.name}
+                    {item.name || item.title}
                   </span>
-                  {/* change text color */}
-                  <span className=" text-sm leading-[1.6] text-white-200 font-normal">
-                    {item.title}
-                  </span>
+                  {item.title && !item.name && (
+                    <span className="text-sm leading-[1.6] text-white-200 font-normal">
+                      {item.title}
+                    </span>
+                  )}
                 </span>
               </div>
             </blockquote>
