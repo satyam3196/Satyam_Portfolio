@@ -29,7 +29,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/bg.png",
     spareImg: "",
   },
   {
@@ -162,65 +162,73 @@ export const achievements = [
 },
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     img: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//   },
+//   {
+//     id: 2,
+//     name: "appwrite",
+//     img: "/app.svg",
+//     nameImg: "/appName.svg",
+//   },
+//   {
+//     id: 3,
+//     name: "HOSTINGER",
+//     img: "/host.svg",
+//     nameImg: "/hostName.svg",
+//   },
+//   {
+//     id: 4,
+//     name: "stream",
+//     img: "/s.svg",
+//     nameImg: "/streamName.svg",
+//   },
+//   {
+//     id: 5,
+//     name: "docker.",
+//     img: "/dock.svg",
+//     nameImg: "/dockerName.svg",
+//   },
+// ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
+    title: "AI Researcher",
+    company: "The Commonwealth",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    date: "Nov 2023 - Present",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    title: "AI Consultant",
+    company: "Obreal Global",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    date: "Feb 2024 - May 2024",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Full Stack Developer",
+    company: "Quilombo UK",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",    
+    date: "July 2023 - October 2023",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
+    title: "Full Stack Developer",
+    company: "The Tann Mann Gaadi",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    date: "Feb 2022 - July 2022",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -230,13 +238,15 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/satyam3196",
   },
+  // {
+  //   id: 2,
+  //   img: "/twit.svg",
+  // },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/satyamsharma96",
   },
 ];
