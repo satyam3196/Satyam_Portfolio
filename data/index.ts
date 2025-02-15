@@ -1,21 +1,23 @@
 export const navItems = [
-  { 
-    name: "Home", 
-    link: "#home",
-    onClick: (e: React.MouseEvent) => {
-      e.preventDefault();
-      const heroSection = document.getElementById('home');
-      if (heroSection) {
-        heroSection.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }
-  },
+   { 
+     name: "Home", 
+     link: "#home",
+     onClick: (e: React.MouseEvent) => {
+       e.preventDefault();
+       const heroSection = document.getElementById('home');
+       if (heroSection) {
+         heroSection.scrollIntoView({ 
+           behavior: 'smooth',
+           block: 'start'
+         });
+       }
+     }
+   },
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Achievements", link: "#achievements" },
+  { name: "Approach", link: "#approach" },
   { name: "Contact", link: "#contact" },
 ];
 
