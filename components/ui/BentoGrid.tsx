@@ -70,6 +70,7 @@ export const BentoGridItem = ({
     const text = "satyam3196@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -158,6 +159,48 @@ export const BentoGridItem = ({
                 </div>
               </div>
             </div>
+          ) : id === 6 ? (
+            <div className="relative h-full w-full overflow-hidden rounded-3xl">
+              <BackgroundGradientAnimation>
+                <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+                </div>
+              </BackgroundGradientAnimation>
+              
+              {copied && (
+                <div className="absolute inset-0 z-50">
+                  <Lottie options={defaultOptions} />
+                </div>
+              )}
+              
+              <div className="absolute inset-0 bg-[#10132E] z-5" />
+              
+              <div className={cn(
+                titleClassName,
+                "relative z-20 h-full w-full flex flex-col items-center justify-center p-6"
+              )}>
+                <div className={`font-sans text-lg lg:text-2xl font-bold mb-6`}>
+                  {title}
+                </div>
+                
+                <div className="space-y-4 w-full">
+                  <MagicButton
+                    title={copied ? "Email copied!" : "Copy my email"}
+                    icon={<IoCopyOutline />}
+                    position="left"
+                    handleClick={handleCopy}
+                    otherClasses="!bg-[#161A31] w-full"
+                  />
+                  
+                  <MagicButton
+                    title="Download resume"
+                    icon={<IoDownloadOutline />}
+                    position="left"
+                    handleClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
+                    otherClasses="!bg-[#161A31] w-full"
+                  />
+                </div>
+              </div>
+            </div>
           ) : (
             <div className={`font-sans text-lg lg:text-3xl font-bold z-10`}>
               {title}
@@ -194,56 +237,6 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-              </div>
-            </div>
-          )}
-          {id === 6 && (
-            <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
-            </div>
-          )}
-          {id === 7 && (
-            <div className="z-10 space-y-4 h-full bg-[#04071D] p-6 rounded-3xl">
-              <BackgroundGradientAnimation>
-                <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
-                </div>
-              </BackgroundGradientAnimation>
-              
-              <div className={cn(
-                titleClassName,
-                "group-hover/bento:translate-x-2 transition duration-200 relative min-h-40 flex flex-col px-5 p-5 lg:p-10 w-full"
-              )}>
-                <div className={`font-sans text-lg lg:text-3xl font-bold z-10 text-center`}>
-                  {title}
-                </div>
-                
-                <div className="mt-5 relative flex justify-center">
-                  <MagicButton
-                    title="Download my resume"
-                    icon={<IoDownloadOutline />}
-                    position="left"
-                    handleClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
-                    otherClasses="!bg-[#161A31]"
-                  />
-                </div>
               </div>
             </div>
           )}
