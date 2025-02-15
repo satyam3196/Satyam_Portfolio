@@ -18,6 +18,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy public directory
+        run: |
+          cp -r public/* out/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
