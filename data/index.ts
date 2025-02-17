@@ -82,7 +82,7 @@ export const projects = [
     iconLists: [
       getImagePath("tech/python.png"),
       getImagePath("tech/nvidia.png"),
-      getImagePath("tech/streamlit.png"),
+      getImagePath("Satyam_Portfolio/streamlit.svg"),
       getImagePath("tech/flask.png"),
     ],
   },
@@ -102,7 +102,7 @@ export const projects = [
     iconLists: [
       getImagePath("tech/python.png"),
       getImagePath("tech/tensorflow.png"),
-      getImagePath("tech/scikit.png"),
+      getImagePath("tech/scikitlearn.png"),
       getImagePath("tech/jupyter.png"),
     ],
     link: "https://github.com/satyam3196/PropPrice-Insight-Advanced-ML-Models-for-Real-Estate-Price-Prediction"
@@ -115,7 +115,7 @@ export const projects = [
     iconLists: [
       getImagePath("tech/python.png"),
       getImagePath("tech/django.png"),
-      getImagePath("tech/postgresql.png"),
+      getImagePath("tech/postgres.png"),
       getImagePath("tech/javascript.png"),
     ],
     link: "https://github.com/satyam3196/Stock-Analysis-Web-App",
@@ -126,9 +126,10 @@ export const projects = [
     des: "Analyzed transaction trends and evaluated the top 10 smart contracts and top 10 Ethereum miners by Ether received. Tracked and correlated scam activity with known scams going offline using a substantial dataset of 5 million rows. Utilized Apache Spark for advanced data manipulation, exploration, and visualization techniques on Ethereum blockchain data.",
     img: getImagePath("project4.png"),
     iconLists: [
-      getImagePath("tech/spark.png"),
+      getImagePath("Satyam_Portfolio/spark.svg"),
       getImagePath("tech/python.png"),
       getImagePath("tech/ethereum.png"),
+      getImagePath("tech/jupyter.png"),
     ],
     link: "https://github.com/satyam3196/spark-ethereum-transactions-analysis",
   },
@@ -166,7 +167,7 @@ export const achievements = [
     id: 1,
     title: "NVIDIA NIM Hackathon Winner",
     des: "Won first place in the NVIDIA NIM Hackathon for developing an innovative AI-powered receipt management solution.",
-    img: getImagePath("nvidia.png"),
+    
   },
 ];
 
@@ -236,7 +237,7 @@ export const workExperience = [
     title: "Full Stack Developer",
     company: "The Tann Mann Gaadi",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    date: "Feb 2022 - July 2022",
+    date: "July 2021 - July 2022",
     className: "md:col-span-2",
     thumbnail: getImagePath("/exp4.svg"),
   },
