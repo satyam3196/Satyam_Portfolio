@@ -26,9 +26,9 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Hi, I'm Satyam Sharma, an AI Researcher at the Commonwealth Secretariat in London, specializing in bridging cutting-edge artificial intelligence with practical software solutions. With deep expertise in Generative AI, large language models (LLMs), Machine Learning and full-stack development, I transform complex AI technologies into impactful, real-world applications that drive innovation and solve meaningful challenges.",
+    title: "Hi, I'm Satyam Sharma, an AI Researcher at the Commonwealth Secretariat in London, specializing in bridging cutting-edge artificial intelligence with practical software solutions. With deep expertise in Generative AI, large language models (LLMs), Machine Learning, and full-stack development, I transform complex AI technologies into impactful, real-world applications that drive innovation and solve meaningful challenges.",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative text-justify text-balance hyphens-auto",
     imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-end",
     img: getImagePath("bg.png"),
@@ -234,7 +234,7 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "Full Stack Developer",
+    title: "Backend Developer",
     company: "The Tann Mann Gaadi",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     date: "July 2021 - July 2022",
