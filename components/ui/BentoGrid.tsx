@@ -52,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Python", "Docker"];
-  const rightLists = ["Langchain", "NuxtJS", "GraphQL"];
+  const leftLists = ["React.js", "Python", "Docker","Azure"];
+  const rightLists = ["Node.js", "OpenAI API", "MySQL","PHP"];
 
   const [copied, setCopied] = useState(false);
 
@@ -130,35 +130,35 @@ export const BentoGridItem = ({
           </div>
           
           {id === 5 ? (
-            <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
-              <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Deep Learning</span>
-                  <span className="text-white font-light">PyTorch, TensorFlow, Keras</span>
-                </div>
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Frontend</span>
-                  <span className="text-white font-light">Vue.js, TypeScript, JavaScript</span>
-                </div>
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Backend</span>
-                  <span className="text-white font-light">FastAPI, Express.js, Node.js</span>
-                </div>
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Databases</span>
-                  <span className="text-white font-light">PostgreSQL, MongoDB, Redis</span>
-                </div>
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
-                  <span className="text-white font-light">Azure, Git, CI/CD, AWS</span>
-                </div>
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
-                  <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI</span>
-                </div>
+          <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
+            <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
+              <div className="tech-category">
+                <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
+                <span className="text-white font-light">Python, PHP, JavaScript</span>
+              </div>
+              <div className="tech-category">
+                <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
+                <span className="text-white font-light">PyTorch, TensorFlow, Transformers, Langchain</span>
+              </div>
+              <div className="tech-category">
+                <span className="text-[#C1C2D3] block mb-1">Frontend</span>
+                <span className="text-white font-light">React.js, Vue.js, TypeScript</span>
+              </div>
+              <div className="tech-category">
+                <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
+                <span className="text-white font-light">FastAPI, Node.js, MySQL, PostgreSQL, MongoDB</span>
+              </div>
+              <div className="tech-category">
+                <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
+                <span className="text-white font-light">Git, Docker, Kubernetes, Azure, AWS</span>
+              </div>
+              <div className="tech-category">
+                <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
+                <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI, NVIDIA NIM</span>
               </div>
             </div>
+          </div>
           ) : id === 6 ? (
             <div className="relative h-full w-full overflow-hidden rounded-3xl">
               <BackgroundGradientAnimation>

@@ -1,20 +1,21 @@
 import { getImagePath } from '@/lib/imageLoader';
 
 export const navItems = [
-   { 
-     name: "Home", 
-     link: "#home",
-     onClick: (e: React.MouseEvent) => {
-       e.preventDefault();
-       const heroSection = document.getElementById('home');
-       if (heroSection) {
-         heroSection.scrollIntoView({ 
-           behavior: 'smooth',
-           block: 'start'
-         });
-       }
-     }
-   },
+  //  { 
+  //    name: "Home", 
+  //    link: "#home",
+  //    onClick: (e: React.MouseEvent) => {
+  //      e.preventDefault();
+  //      const heroSection = document.getElementById('home');
+  //      if (heroSection) {
+  //        heroSection.scrollIntoView({ 
+  //          behavior: 'smooth',
+  //          block: 'start'
+  //        });
+  //      }
+  //    }
+  //  },
+  { name: "Home", link: "#" },
   { name: "About", link: "#about" },
   { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
@@ -26,7 +27,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Hi, I'm Satyam Sharma, an AI Researcher at the Commonwealth Secretariat in London, specializing in bridging cutting-edge artificial intelligence with practical software solutions. With deep expertise in Generative AI, large language models (LLMs), Machine Learning, and full-stack development, I transform complex AI technologies into impactful, real-world applications that drive innovation and solve meaningful challenges.",
+    title: "I'm  an AI Researcher at the Commonwealth Secretariat in London, specializing in bridging cutting-edge artificial intelligence with practical software solutions. I combine modern web technologies with advanced machine learning systems to build scalable, intelligent applications. My expertise spans from developing large language models and generative AI systems to creating robust full-stack applications.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative text-justify text-balance hyphens-auto",
     imgClassName: "w-full h-full object-cover",
@@ -122,16 +123,16 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Ethereum Transaction Analysis Project",
-    des: "Analyzed transaction trends and evaluated the top 10 smart contracts and top 10 Ethereum miners by Ether received. Tracked and correlated scam activity with known scams going offline using a substantial dataset of 5 million rows. Utilized Apache Spark for advanced data manipulation, exploration, and visualization techniques on Ethereum blockchain data.",
+    title: "CIFAR-10 Image Classification Using PyTorch",
+    des: "Developed a deep learning model to classify images from the CIFAR-10 dataset using PyTorch. The model incorporates convolutional layers, batch normalization, PReLU activation, and adaptive convolutions. It uses a custom loss function, LabelSmoothingCrossEntropyLoss, and is trained with the RMSprop optimizer, leveraging cosine annealing for learning rate scheduling. The project visualizes the training process with loss and accuracy plots for both training and validation.",
     img: getImagePath("project4.png"),
     iconLists: [
-      getImagePath("Satyam_Portfolio/spark.svg"),
+      getImagePath("tech/pytorch.png"),
       getImagePath("tech/python.png"),
-      getImagePath("tech/ethereum.png"),
       getImagePath("tech/jupyter.png"),
+      getImagePath("tech/matplotlib.png"),
     ],
-    link: "https://github.com/satyam3196/spark-ethereum-transactions-analysis",
+    link: "https://github.com/satyam3196/Image-Classification-CIFAR10",
   },
 ];
 
