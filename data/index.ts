@@ -209,7 +209,7 @@ export const workExperience = [
     id: 1,
     title: "AI Researcher",
     company: "The Commonwealth",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "Contributed to development of AI-powered policy tools, including a Regulatory Impact Assessment platform and StrategusAI, using RAG architecture and full-stack technologies.",
     date: "Nov 2023 - Present",
     className: "md:col-span-2",
     thumbnail: getImagePath("/exp1.svg"),
@@ -218,7 +218,7 @@ export const workExperience = [
     id: 2,
     title: "AI Consultant",
     company: "Obreal Global",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    desc: "Evaluated AI-driven projects for the Global Youth Incubator Program, contributing to OBREAL Global’s €2M initiative supporting AI entrepreneurship.",
     date: "Feb 2024 - May 2024",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: getImagePath("/exp2.svg"),
@@ -227,16 +227,16 @@ export const workExperience = [
     id: 3,
     title: "Full Stack Developer",
     company: "Quilombo UK",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",    
+    desc: "Implemented content management features for Quilombo’s web platform using LAMP stack and Symfony, while designing responsive interfaces for an enhanced user experience.",    
     date: "July 2023 - October 2023",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: getImagePath("/exp3.svg"),
   },
   {
     id: 4,
-    title: "Backend Developer",
+    title: "Junior Backend Developer",
     company: "The Tann Mann Gaadi",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Contributed to backend development of a LAMP-based web platform, optimizing MySQL performance and integrating Drupal CMS for efficient content management.",
     date: "July 2021 - July 2022",
     className: "md:col-span-2",
     thumbnail: getImagePath("/exp4.svg"),
@@ -259,3 +259,6 @@ export const socialMedia = [
     url: "https://www.linkedin.com/in/satyamsharma96",
   },
 ];
+
+// No CSS code should be present in a TypeScript file. Please move this CSS to a separate stylesheet.
+ 
