@@ -116,27 +116,14 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              {/* change text color, text-lg */}
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
+              {/* Show title first */}
+              <h3 className="text-xl font-bold leading-[1.6] text-white mb-4">
+                {item.title}
+              </h3>
+              {/* Then show description/quote */}
+              <p className="relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
                 {item.quote || item.des}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                {/* add this div for the profile img */}
-                <div className="me-3">
-                  {item.img && <img src={getImagePath(item.img)} alt="achievement" />}
-                </div>
-                <span className="flex flex-col gap-1">
-                  {/* change text color, font-normal to font-bold, text-xl */}
-                  <span className="text-xl font-bold leading-[1.6] text-white">
-                    {item.name || item.title}
-                  </span>
-                  {item.title && !item.name && (
-                    <span className="text-sm leading-[1.6] text-white-200 font-normal">
-                      {item.title}
-                    </span>
-                  )}
-                </span>
-              </div>
+              </p>
             </blockquote>
           </li>
         ))}

@@ -129,36 +129,56 @@ export const BentoGridItem = ({
             {description}
           </div>
           
-          {id === 5 ? (
-          <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
-            <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
-              <div className="tech-category">
-                <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
-                <span className="text-white font-light">Python, PHP, JavaScript</span>
-              </div>
-              <div className="tech-category">
-                <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
-                <span className="text-white font-light">PyTorch, TensorFlow, Transformers, Langchain</span>
-              </div>
-              <div className="tech-category">
-                <span className="text-[#C1C2D3] block mb-1">Frontend</span>
-                <span className="text-white font-light">React.js, Vue.js, TypeScript</span>
-              </div>
-              <div className="tech-category">
-                <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
-                <span className="text-white font-light">FastAPI, Node.js, MySQL, PostgreSQL, MongoDB</span>
-              </div>
-              <div className="tech-category">
-                <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
-                <span className="text-white font-light">Git, Docker, Kubernetes, Azure, AWS</span>
-              </div>
-              <div className="tech-category">
-                <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
-                <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI, NVIDIA NIM</span>
+          {id === 3 ? (
+            <div className="z-10 h-full">
+              <div className="font-sans text-2xl lg:text-3xl font-bold mb-5">{title}</div>
+              <div className="flex flex-col gap-2">
+                <div className="text-white font-light space-y-3">
+                  <p className="text-purple font-semibold text-2xl">
+                    M.Sc. in Big Data Science (Distinction)
+                  </p>
+                  <p className="text-[#C1C2D3]">
+                    Queen Mary University of London
+                  </p>
+                  <p className="text-[#C1C2D3] text-sm">
+                    Sept 2022 - Sept 2023
+                  </p>
+                  <p className="text-[#C1C2D3] mt-4 text-sm leading-relaxed">
+                   Dissertation: ”Advanced Machine Learning Models for Real Estate Price Prediction” (Published by CRC Press, Taylor & Francis Group). The research analyzes seven key Machine Learning algorithms using the H4M dataset, contributing to the field of AI-driven real estate analytics.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          ) : id === 5 ? (
+            <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
+              <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
+                  <span className="text-white font-light">Python, PHP, JavaScript</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
+                  <span className="text-white font-light">PyTorch, TensorFlow, Transformers, Langchain</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Frontend</span>
+                  <span className="text-white font-light">React.js, Vue.js, TypeScript</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
+                  <span className="text-white font-light">FastAPI, Node.js, MySQL, PostgreSQL, MongoDB</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
+                  <span className="text-white font-light">Git, Docker, Kubernetes, Azure, AWS</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
+                  <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI, NVIDIA NIM</span>
+                </div>
+              </div>
+            </div>
           ) : id === 6 ? (
             <div className="relative h-full w-full overflow-hidden rounded-3xl">
               <BackgroundGradientAnimation>
@@ -210,8 +230,8 @@ export const BentoGridItem = ({
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
 
-          {/* Tech stack list div */}
-          {id === 3 && (
+          {/* Tech stack list div - only show for id === 3 if you want to keep it */}
+          {id === 3 ? null : id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">

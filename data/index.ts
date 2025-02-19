@@ -19,6 +19,7 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
+  //{ name: "Education", link: "#education" },
   { name: "Achievements", link: "#achievements" },
   { name: "Approach", link: "#approach" },
   { name: "Contact", link: "#contact" },
@@ -27,7 +28,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I'm  an AI Researcher at the Commonwealth Secretariat in London, specializing in bridging cutting-edge artificial intelligence with practical software solutions. I combine modern web technologies with advanced machine learning systems to build scalable, intelligent applications. My expertise spans from developing large language models and generative AI systems to creating robust full-stack applications.",
+    title: "I'm an AI Researcher at the Commonwealth Secretariat in London, specializing in integrating artificial intelligence with modern web technologies to build scalable, intelligent applications. My work involves leveraging existing AI models, fine-tuning open-source solutions, and developing robust full-stack systems to create impactful, real-world applications. With experience across multiple roles, I have worked on AI/ML-driven solutions, data-intensive applications, and end-to-end software systems that bridge the gap between research and practical implementation. My goal is to make AI more accessible and effective in solving real-world challenges.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative text-justify text-balance hyphens-auto",
     imgClassName: "w-full h-full object-cover",
@@ -47,16 +48,14 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Core tech stack",
+    title: "Education",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "justify-start",
     img: "",
     spareImg: "",
   },
-  
-
   {
     id: 5,
     description: "I constantly evolve my tech stack to bridge cutting-edge AI with robust full-stack solutions",
@@ -82,7 +81,7 @@ export const projects = [
     link: "https://github.com/satyam3196/ReceiptHub",
     iconLists: [
       getImagePath("tech/python.png"),
-      getImagePath("tech/nvidia.png"),
+      getImagePath("tech/nvidia.jpg"),
       getImagePath("Satyam_Portfolio/streamlit.svg"),
       getImagePath("tech/flask.png"),
     ],
@@ -130,28 +129,34 @@ export const projects = [
       getImagePath("tech/pytorch.png"),
       getImagePath("tech/python.png"),
       getImagePath("tech/jupyter.png"),
-      getImagePath("tech/matplotlib.png"),
+      //getImagePath("tech/neuralnetwork.jpg"),
+      getImagePath("/git.svg"),
     ],
     link: "https://github.com/satyam3196/Image-Classification-CIFAR10",
   },
 ];
 
-export const achievements = [
+export const achievements = [ 
   {
-    quote: "Microsoft Certified: Azure Data Engineer Associate. This certification validates my skills in designing and implementing data solutions that use Azure data services. It demonstrates my ability to manage data storage, processing, and security, ensuring that I can effectively handle data engineering tasks in cloud environments.",
-    name: "Microsoft Certified: Azure Data Engineer Associate",
-    title: "Certified Data Engineer",
+    title: "Published AI Researcher",
+    quote: "My research, Advanced Machine Learning Models for Real Estate Price Prediction, was published as Chapter 7 in the book Applications of AI for Interdisciplinary Research (CRC Press, Taylor & Francis Group). This study analyzes seven key machine learning algorithms using the H4M dataset, contributing to AI-driven real estate analytics. Being featured alongside groundbreaking work from the EECS Network Research Group at Queen Mary University of London is an honor.",
   },
     {
-    "quote": "Microsoft Certified: Power BI Data Analyst Associate. This certification validates my expertise in transforming raw data into meaningful insights using Power BI. It demonstrates my ability to prepare, model, visualize, and analyze data while ensuring data security and efficient management, enabling data-driven decision-making.",
-    "name": "Microsoft Certified: Power BI Data Analyst Associate",
-    "title": "Certified Power BI Data Analyst"
+    title: "Microsoft Certified: Power BI Data Analyst Associate",
+    quote: "This certification validates my expertise in transforming raw data into meaningful insights using Power BI. It demonstrates my ability to prepare, model, visualize, and analyze data while ensuring data security and efficient management, enabling data-driven decision-making.",
+    //name: "",
+    
   },
   {
-    "quote": "Honored to have my project, ReceiptHub, ranked among the top 15 in the NVIDIA and LlamaIndex Developer Contest. This recognition highlights my work in leveraging AI for intelligent expense tracking. ReceiptHub utilizes advanced AI models for receipt parsing, categorization, and visualization, streamlining financial management for small businesses and solo entrepreneurs. Winning this award also granted me access to an NVIDIA DLI instructor-led workshop, allowing me to further enhance my expertise in AI-driven solutions.",
-    "name": "NVIDIA & LlamaIndex Developer Contest - Top 15 Project",
-    "title": "Award-Winning AI Developer",
-    "project_link": "https://github.com/satyam3196/ReceiptHub"
+    title: "Microsoft Certified: Azure Data Engineer Associate",
+    quote: "This certification validates my skills in designing and implementing data solutions that use Azure data services. It demonstrates my ability to manage data storage, processing, and security, ensuring that I can effectively handle data engineering tasks in cloud environments.",
+  },
+  { 
+    //id: 1,
+    title: "NVIDIA & LlamaIndex Developer Contest - Top 15 Project",
+    quote: "Honored to have my project, ReceiptHub, ranked among the top 15 in the NVIDIA and LlamaIndex Developer Contest. This recognition highlights my work in leveraging AI for intelligent expense tracking. ReceiptHub utilizes advanced AI models for receipt parsing, categorization, and visualization, streamlining financial management for small businesses and solo entrepreneurs. Winning this award also granted me access to an NVIDIA DLI instructor-led workshop, allowing me to further enhance my expertise in AI-driven solutions.",
+    //name: "",
+    
 },
   // {
   //   quote:
@@ -159,17 +164,17 @@ export const achievements = [
   //   name: "Michael Johnson",
   //   title: "Director of AlphaStream Technologies",
   // },
-  {
-    "quote": "My Master's Dissertation, 'Advanced ML Models for Real Estate Price Prediction,' has been featured as Chapter 7 in the book 'Applications of AI for Interdisciplinary Research.' This recognition highlights my research in applying machine learning to predict real estate prices with high accuracy. Being part of this publication alongside other groundbreaking work from the EECS Network Research Group at QMUL is an honor. Special thanks to Dr. Sukhpal Singh Gill for his invaluable guidance throughout this project.",
-    "name": "Featured Research in 'Applications of AI for Interdisciplinary Research'",
-    "title": "Published AI Researcher",
-},
-  {
-    id: 1,
-    title: "NVIDIA NIM Hackathon Winner",
-    des: "Won first place in the NVIDIA NIM Hackathon for developing an innovative AI-powered receipt management solution.",
+//   {
+//     "quote": "My Master's Dissertation, 'Advanced ML Models for Real Estate Price Prediction,' has been featured as Chapter 7 in the book 'Applications of AI for Interdisciplinary Research.' This recognition highlights my research in applying machine learning to predict real estate prices with high accuracy. Being part of this publication alongside other groundbreaking work from the EECS Network Research Group at QMUL is an honor. Special thanks to Dr. Sukhpal Singh Gill for his invaluable guidance throughout this project.",
+//     "name": "Featured Research in 'Applications of AI for Interdisciplinary Research'",
+//     "title": "Published AI Researcher",
+// },
+  // {
+  //   id: 1,
+  //   title: "NVIDIA NIM Hackathon Winner",
+  //   des: "Won first place in the NVIDIA NIM Hackathon for developing an innovative AI-powered receipt management solution.",
     
-  },
+  // },
 ];
 
 // export const companies = [
@@ -219,7 +224,7 @@ export const workExperience = [
     id: 2,
     title: "AI Consultant",
     company: "Obreal Global",
-    desc: "Evaluated AI-driven projects for the Global Youth Incubator Program, contributing to OBREAL Global’s €2M initiative supporting AI entrepreneurship.",
+    desc: "Evaluated AI-driven projects for the Global Youth Incubator Program, contributing to OBREAL Global's €2M initiative supporting AI entrepreneurship.",
     date: "Feb 2024 - May 2024",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: getImagePath("/exp2.svg"),
@@ -228,7 +233,7 @@ export const workExperience = [
     id: 3,
     title: "Full Stack Developer",
     company: "Quilombo UK",
-    desc: "Implemented content management features for Quilombo’s web platform using LAMP stack and Symfony, while designing responsive interfaces for an enhanced user experience.",    
+    desc: "Implemented content management features for Quilombo's web platform using LAMP stack and Symfony, while designing responsive interfaces for an enhanced user experience.",    
     date: "July 2023 - October 2023",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: getImagePath("/exp3.svg"),

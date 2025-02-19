@@ -9,6 +9,24 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Satyam's Portfolio",
   description: "Blending Full-Stack Expertise with Cutting-Edge AI Solutions",
+  openGraph: {
+    title: "Satyam's Portfolio",
+    description: "Blending Full-Stack Expertise with Cutting-Edge AI Solutions",
+    images: [
+      {
+        url: getImagePath("/exp1.svg"),
+        width: 1200,
+        height: 630,
+        alt: "Satyam's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Satyam's Portfolio",
+    description: "Blending Full-Stack Expertise with Cutting-Edge AI Solutions",
+    images: [getImagePath("/exp1.svg")],
+  },
 };
 
 export default function RootLayout({

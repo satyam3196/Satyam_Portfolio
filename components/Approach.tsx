@@ -15,7 +15,7 @@ const Approach = () => {
         <Card
           title="Research & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="Before diving into development, I start with an in-depth analysis of the problem domain. Whether it's designing an AI-driven application or architecting a scalable system, I define clear objectives, assess technical feasibility, and align solutions with business goals.."
+          des="Before diving into development, I start with an in-depth analysis of the problem domain. Whether it's designing an AI-driven application or architecting a scalable system, I define clear objectives, assess technical feasibility, and align solutions with business goals."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
