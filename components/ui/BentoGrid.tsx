@@ -144,7 +144,7 @@ export const BentoGridItem = ({
                     Sept 2022 - Sept 2023
                   </p>
                   <p className="text-[#C1C2D3] mt-4 text-sm leading-relaxed">
-                   Dissertation: ”Advanced Machine Learning Models for Real Estate Price Prediction” (Published by CRC Press, Taylor & Francis Group). The research analyzes seven key Machine Learning algorithms using the H4M dataset, contributing to the field of AI-driven real estate analytics.
+                   Dissertation: ”Advanced Machine Learning Models for Real Estate Price Prediction” (Published by CRC Press, Taylor & Francis Group).
                   </p>
                 </div>
               </div>
@@ -155,28 +155,30 @@ export const BentoGridItem = ({
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
-                  <span className="text-white font-light">Python, PHP, JavaScript</span>
+                  <span className="text-white font-light">Python, JavaScript, PHP, SQL</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
                   <span className="text-white font-light">PyTorch, TensorFlow, Transformers, Langchain</span>
                 </div>
                 <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Frontend</span>
-                  <span className="text-white font-light">React.js, Vue.js, TypeScript</span>
-                </div>
-                <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
-                  <span className="text-white font-light">FastAPI, Node.js, MySQL, PostgreSQL, MongoDB</span>
-                </div>
-                <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
-                  <span className="text-white font-light">Git, Docker, Kubernetes, Azure, AWS</span>
+                  <span className="text-white font-light">Git, Docker, Azure DevOps, AWS</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
                   <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI, NVIDIA NIM</span>
                 </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Frontend</span>
+                  <span className="text-white font-light">React.js, Vue.js, Twig</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
+                  <span className="text-white font-light">FastAPI, Node.js, GraphQL, MySQL, MongoDB</span>
+                </div>
+                
+                
               </div>
             </div>
           ) : id === 6 ? (
@@ -215,7 +217,7 @@ export const BentoGridItem = ({
                     title="Download resume"
                     icon={<IoDownloadOutline />}
                     position="left"
-                    handleClick={() => window.open('/path-to-your-resume.pdf', '_blank')}
+                    handleClick={() => window.open('/Satyam_Sharma_Resume.pdf', '_blank')}
                     otherClasses="!bg-[#161A31] w-full"
                   />
                 </div>

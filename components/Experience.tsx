@@ -47,7 +47,7 @@ const Experience = () => {
                   {card.desc}
                 </p>
                 <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.date}
+                  {card.date} <span className="mx-1">|</span> {card.location}
                 </p>
               </div>
             </div>

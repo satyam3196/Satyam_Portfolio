@@ -21,12 +21,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Satyam's Portfolio",
-    description: "Blending Full-Stack Expertise with Cutting-Edge AI Solutions",
-    images: [getImagePath("/exp1.svg")],
-  },
 };
 
 export default function RootLayout({
