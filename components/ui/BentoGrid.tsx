@@ -217,7 +217,7 @@ export const BentoGridItem = ({
                     title="Download resume"
                     icon={<IoDownloadOutline />}
                     position="left"
-                    handleClick={() => window.open('/Satyam_Sharma_Resume.pdf', '_blank')}
+                    handleClick={() => window.open('https://drive.google.com/file/d/1Ndy_McuAA2lIWlsay1-igHATgcNAfuvB/view?usp=drive_link', '_blank')}
                     otherClasses="!bg-[#161A31] w-full"
                   />
                 </div>
