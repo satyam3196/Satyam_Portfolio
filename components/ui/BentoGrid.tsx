@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "satyam3196@gmail.com";
+    const text = "satyam3196@outlook.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -213,13 +213,13 @@ export const BentoGridItem = ({
                     otherClasses="!bg-[#161A31] w-full"
                   />
                   
-                  <MagicButton
+                  {/* <MagicButton
                     title="Download resume"
                     icon={<IoDownloadOutline />}
                     position="left"
                     handleClick={() => window.open('https://drive.google.com/file/d/1pquzLcnzl3HpFcSwrK3r6kuERGG2F4nG/view?usp=sharing', '_blank')}
                     otherClasses="!bg-[#161A31] w-full"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
