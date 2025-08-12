@@ -31,7 +31,7 @@ export const gridItems = [
     //title: "I'm an AI Researcher at the Commonwealth Secretariat in London, specializing in integrating artificial intelligence with modern web technologies to build scalable, intelligent applications. My work involves leveraging existing AI models, fine-tuning open-source solutions, and developing robust full-stack systems to create impactful, real-world applications. With experience across multiple roles, I have worked on AI/ML-driven solutions, data-intensive applications, and end-to-end software systems that bridge the gap between research and practical implementation. My goal is to make AI more accessible and effective in solving real-world challenges.",
     //title: "I architect intelligent systems that bridge cutting-edge AI with practical implementation. Specializing in RAG architectures, LLMs, and modern web technologies, I'm passionate about making AI more accessible and effective in solving real-world challenges through robust full-stack development.",
     //title: "I architect intelligent systems that bridge cutting-edge AI with practical implementation. Specializing in RAG architectures, LLMs, and modern web technologies, I focus on developing scalable, AI-driven applications that solve real-world challenges through robust full-stack development. My expertise spans fine-tuning open-source models, integrating AI with web technologies, and building end-to-end software systems that make artificial intelligence more accessible and effective in practical settings.",
-    title: "I architect intelligent systems that bridge cutting-edge AI with practical implementation. With 2.5+ years of experience specializing in RAG architectures, LLMs, and modern web technologies, I develop scalable, AI-driven applications that solve real-world challenges through robust full-stack development. My expertise spans fine-tuning open-source models, integrating AI with web technologies, and building end-to-end software systems that make artificial intelligence more accessible and effective in practical settings.",
+    title: "I architect intelligent systems that bridge cutting-edge AI with practical implementation. With 3+ years of experience specializing in RAG architectures, LLMs, and modern web technologies, I develop scalable, AI-driven applications that solve real-world challenges through robust full-stack development. My expertise spans fine-tuning open-source models, integrating AI with web technologies, and building end-to-end software systems that make artificial intelligence more accessible and effective in practical settings.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] relative text-justify text-balance hyphens-auto",
     imgClassName: "w-full h-full object-cover",
@@ -77,7 +77,42 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
+  id: 1,
+  title: "Wellness-on-the-Go",
+  des: "A full-stack wellness booking platform connecting service providers with busy professionals in London. Built with React for a seamless user experience, Node.js for the backend, and PostgreSQL for secure and scalable data management.",
+  img: getImagePath("wellness.png"), // Suggest a screenshot of the homepage or booking interface
+  iconLists: [
+    getImagePath("tech/react.svg"),
+    getImagePath("tech/node.svg"),
+    getImagePath("tech/postgresql.svg"),
+  ],
+  link: "https://mywellnessonthego.com/"
+},
+
+  // {
+  //   id: 1,
+  //   title: "3D Solar System Planets to Explore",
+  //   des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+  //   img: "/p1.svg",
+  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+  //   link: "/ui.earth.com",
+  // },
+  {
+  id: 2,
+  title: "Witness Films",
+  des: "A visually captivating frontend website for a Dehradun-based production house, with operations in Delhi and across India. The website showcases the company’s creative portfolio, with Google Analytics integrated for performance tracking.",
+  img: getImagePath("witness.png"), // Suggest a screenshot of the landing page or about section
+  iconLists: [
+    getImagePath("tech/html.svg"),
+    getImagePath("tech/css.png"),
+    getImagePath("tech/javascript.png"),
+    getImagePath("tech/google.png"),
+  ],
+  link: "https://witness-films.com/"
+},
+
+  {
+    id: 3,
     title: "ReceiptHub",
     des: "An AI-powered expense tracking application that streamlines receipt management for small businesses. Built with NVIDIA NIM (Mixtral-8x22B), LlamaParse, Streamlit, and Flask.",
     img: getImagePath("project1.png"),
@@ -89,16 +124,8 @@ export const projects = [
       getImagePath("tech/flask.png"),
     ],
   },
-  // {
-  //   id: 1,
-  //   title: "3D Solar System Planets to Explore",
-  //   des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-  //   img: "/p1.svg",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-  //   link: "/ui.earth.com",
-  // },
   {
-    id: 2,
+    id: 4,
     title: "PropPrice Insight",
     des: "A comprehensive machine learning project implementing 7 advanced models (XGBoost, AdaBoost, CatBoost, Random Forest, KNN, Neural Networks) for real estate price prediction. Features detailed performance analysis and feature importance visualizations using the H4M dataset.",
     img: getImagePath("project2.png"),
@@ -111,7 +138,7 @@ export const projects = [
     link: "https://github.com/satyam3196/PropPrice-Insight-Advanced-ML-Models-for-Real-Estate-Price-Prediction"
   },
   {
-    id: 3,
+    id: 5,
     title: "Stock Analysis Web App",
     des: "A Django application that dynamically interacts with the YFinance REST API to display stock details, charts, and summaries based on user input. The app persists user data and login details in a PostgreSQL database, hosted on Railway Cloud.",
     img: getImagePath("project3.png"),
@@ -124,7 +151,7 @@ export const projects = [
     link: "https://github.com/satyam3196/Stock-Analysis-Web-App",
   },
   {
-    id: 4,
+    id: 6,
     title: "CIFAR-10 Image Classification Using PyTorch",
     des: "Developed a deep learning model to classify images from the CIFAR-10 dataset using PyTorch. The model incorporates convolutional layers, batch normalization, PReLU activation, and adaptive convolutions. It uses a custom loss function, LabelSmoothingCrossEntropyLoss, and is trained with the RMSprop optimizer, leveraging cosine annealing for learning rate scheduling. The project visualizes the training process with loss and accuracy plots for both training and validation.",
     img: getImagePath("project4.png"),

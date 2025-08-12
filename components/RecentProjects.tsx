@@ -12,7 +12,7 @@ const RecentProjects = () => {
       <div className="py-20">
         <h1 className="heading">
           A Selection of{" "}
-          <span className="text-purple">Personal Projects</span>
+          <span className="text-purple">Projects</span>
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
           {projects.map((item) => (
@@ -21,7 +21,7 @@ const RecentProjects = () => {
               key={item.id}
             >
               <PinContainer
-                title="Click to visit GitHub Repository"
+                title="Click to visit Website"
                 href={item.link}
               >
                 <a 
@@ -75,7 +75,7 @@ const RecentProjects = () => {
 
                     <div className="flex justify-center items-center">
                       <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                        Visit GitHub Repository
+                        Visit the Website
                       </p>
                       <FaLocationArrow className="ms-3" color="#CBACF9" />
                     </div>
