@@ -76,18 +76,18 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
-  id: 1,
-  title: "Wellness-on-the-Go",
-  des: "A full-stack wellness booking platform connecting service providers with busy professionals in London. Built with React for a seamless user experience, Node.js for the backend, and PostgreSQL for secure and scalable data management.",
-  img: getImagePath("wellness.png"), // Suggest a screenshot of the homepage or booking interface
-  iconLists: [
-    getImagePath("tech/react.svg"),
-    getImagePath("tech/node.svg"),
-    getImagePath("tech/postgresql.svg"),
-  ],
-  link: "https://mywellnessonthego.com/"
-},
+//   {
+//   id: 1,
+//   title: "Wellness-on-the-Go",
+//   des: "A full-stack wellness booking platform connecting service providers with busy professionals in London. Built with React for a seamless user experience, Node.js for the backend, and PostgreSQL for secure and scalable data management.",
+//   img: getImagePath("wellness.png"), // Suggest a screenshot of the homepage or booking interface
+//   iconLists: [
+//     getImagePath("tech/react.svg"),
+//     getImagePath("tech/node.svg"),
+//     getImagePath("tech/postgresql.svg"),
+//   ],
+//   link: "https://mywellnessonthego.com/"
+// },
 
   // {
   //   id: 1,
@@ -97,19 +97,19 @@ export const projects = [
   //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
   //   link: "/ui.earth.com",
   // },
-  {
-  id: 2,
-  title: "Witness Films",
-  des: "A visually captivating frontend website for a Dehradun-based production house, with operations in Delhi and across India. The website showcases the company’s creative portfolio, with Google Analytics integrated for performance tracking.",
-  img: getImagePath("witness.png"), // Suggest a screenshot of the landing page or about section
-  iconLists: [
-    getImagePath("tech/html.svg"),
-    getImagePath("tech/css.png"),
-    getImagePath("tech/javascript.png"),
-    getImagePath("tech/google.png"),
-  ],
-  link: "https://witness-films.com/"
-},
+//   {
+//   id: 2,
+//   title: "Witness Films",
+//   des: "A visually captivating frontend website for a Dehradun-based production house, with operations in Delhi and across India. The website showcases the company’s creative portfolio, with Google Analytics integrated for performance tracking.",
+//   img: getImagePath("witness.png"), // Suggest a screenshot of the landing page or about section
+//   iconLists: [
+//     getImagePath("tech/html.svg"),
+//     getImagePath("tech/css.png"),
+//     getImagePath("tech/javascript.png"),
+//     getImagePath("tech/google.png"),
+//   ],
+//   link: "https://witness-films.com/"
+// },
 
   {
     id: 3,
@@ -251,16 +251,16 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: getImagePath("/exp1.svg"),
   },
-  {
-    id: 2,
-    title: "AI Consultant",
-    company: "Obreal Global",
-    location: "London, UK",
-    desc: "Evaluated AI-driven projects for the Global Youth Incubator Program, contributing to OBREAL Global's €2M initiative supporting AI entrepreneurship.",
-    date: "Feb 2024 - May 2024",
-    className: "md:col-span-2",
-    thumbnail: getImagePath("/exp2.svg"),
-  },
+  // {
+  //   id: 2,
+  //   title: "AI Consultant",
+  //   company: "Obreal Global",
+  //   location: "London, UK",
+  //   desc: "Evaluated AI-driven projects for the Global Youth Incubator Program, contributing to OBREAL Global's €2M initiative supporting AI entrepreneurship.",
+  //   date: "Feb 2024 - May 2024",
+  //   className: "md:col-span-2",
+  //   thumbnail: getImagePath("/exp2.svg"),
+  // },
   {
     id: 3,
     title: "IT Assistant",
