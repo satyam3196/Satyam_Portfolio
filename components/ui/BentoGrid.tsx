@@ -67,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "satyam3196@outlook.com";
+    const text = "satyam3196@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -155,15 +155,15 @@ export const BentoGridItem = ({
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
-                  <span className="text-white font-light">Python, JavaScript, PHP, SQL</span>
+                  <span className="text-white font-light">Python, JavaScript (React Native, Node.js), SQL, C, C++, PHP</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
-                  <span className="text-white font-light">PyTorch, TensorFlow, Transformers, Langchain</span>
+                  <span className="text-white font-light">Transformers, LangChain, PyTorch, TensorFlow, OpenAI API (ChatGPT), RAG</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
-                  <span className="text-white font-light">Git, Docker, Azure DevOps, AWS</span>
+                  <span className="text-white font-light">Azure (App Service, Cognitive Services, DevOps), AWS (EC2, S3), Docker, Git, CI/CD</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
@@ -171,11 +171,11 @@ export const BentoGridItem = ({
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Frontend</span>
-                  <span className="text-white font-light">React.js, Vue.js, Twig</span>
+                  <span className="text-white font-light">React Native, Expo, React.js, Vue.js</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
-                  <span className="text-white font-light">FastAPI, Node.js, GraphQL, MySQL, MongoDB</span>
+                  <span className="text-white font-light">Node.js, Express.js, GraphQL, MySQL, MongoDB</span>
                 </div>
                 
                 
