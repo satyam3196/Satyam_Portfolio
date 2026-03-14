@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-             Hi! I&apos;m Satyam Sharma — a Software Developer and AI Engineer specializing in building scalable, intelligent applications that connect machine learning, cloud infrastructure, and real-world impact.</p>
+             Hi! I&apos;m Satyam Sharma — an engineer at the intersection of AI and full-stack development, building scalable applications that connect machine learning, cloud infrastructure, and real-world impact.</p>
 
           <a href="#about">
             <MagicButton
