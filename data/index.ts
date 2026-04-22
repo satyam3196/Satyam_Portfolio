@@ -181,13 +181,14 @@ export const achievements = [
     title: "Microsoft Certified: Azure Data Engineer Associate",
     quote: "This certification validates my skills in designing and implementing data solutions that use Azure data services. It demonstrates my ability to manage data storage, processing, and security, ensuring that I can effectively handle data engineering tasks in cloud environments.",
   },
-  { 
-    //id: 1,
+  {
     title: "NVIDIA & LlamaIndex Developer Contest - Top 15 Project",
     quote: "Honored to have my project, ReceiptHub, ranked among the top 15 in the NVIDIA and LlamaIndex Developer Contest. This recognition highlights my work in leveraging AI for intelligent expense tracking. ReceiptHub utilizes advanced AI models for receipt parsing, categorization, and visualization, streamlining financial management for small businesses and solo entrepreneurs. Winning this award also granted me access to an NVIDIA DLI instructor-led workshop, allowing me to further enhance my expertise in AI-driven solutions.",
-    //name: "",
-    
-},
+  },
+  {
+    title: "Google: Data Analytics Professional Certificate",
+    quote: "Completed Google's rigorous Data Analytics Professional Certificate, gaining hands-on expertise in data cleaning, analysis, and visualization. This program reinforced my proficiency in SQL, R, spreadsheets, and Tableau, equipping me to extract actionable insights from complex datasets and communicate findings effectively to stakeholders.",
+  },
   // {
   //   quote:
   //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
