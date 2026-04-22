@@ -9,10 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Satyam's Portfolio",
-  description: "Blending Full-Stack Expertise with Cutting-Edge AI Solutions",
+  description: "Blending Data Analytics with Next-Generation AI Engineering ",
   openGraph: {
     title: "Satyam's Portfolio",
-    description: "Blending Full-Stack Expertise with Cutting-Edge AI Solutions",
+    description: "Blending Data Analytics with Next-Generation AI Engineering ",
     images: [
       {
         url: getImagePath("/exp1.svg"),

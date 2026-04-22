@@ -149,39 +149,82 @@ export const BentoGridItem = ({
                 </div>
               </div>
             </div>
-          ) : id === 5 ? (
+           ) : id === 5 ? (
             <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
-              <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
+              <div className="font-sans text-base lg:text-xl font-bold mb-4">Tools & Technologies</div>
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-xs lg:text-sm">
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
-                  <span className="text-white font-light">Python, JavaScript (React Native, Node.js), SQL, C, C++, PHP</span>
+                  <span className="text-white font-light">Python, SQL, JavaScript (ES6+)</span>
                 </div>
                 <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
-                  <span className="text-white font-light">Transformers, LangChain, PyTorch, TensorFlow, OpenAI API (ChatGPT), RAG</span>
+                  <span className="text-[#C1C2D3] block mb-1">Data Analysis & Engineering</span>
+                  <span className="text-white font-light">Pandas, NumPy, Power BI, ETL Pipelines, Airflow, Custom Data Pipelines</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">AI & Machine Learning</span>
+                  <span className="text-white font-light">LLMs (OpenAI GPT, LangChain, Transformers), PyTorch, TensorFlow, RAG, AI Agents</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">AI Integration</span>
+                  <span className="text-white font-light">ChatGPT API, Hugging Face, Azure Cognitive Services, NVIDIA NIM</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
-                  <span className="text-white font-light">Azure (App Service, Cognitive Services, DevOps), AWS (EC2, S3), Docker, Git, CI/CD</span>
+                  <span className="text-white font-light">AWS (EC2, S3), Microsoft Azure (App Service, DevOps), Docker, CI/CD</span>
                 </div>
                 <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
-                  <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI, NVIDIA NIM</span>
+                  <span className="text-[#C1C2D3] block mb-1">Databases</span>
+                  <span className="text-white font-light">PostgreSQL, MySQL, MongoDB</span>
+                </div>
+                <div className="tech-category">
+                  <span className="text-[#C1C2D3] block mb-1">Backend Development</span>
+                  <span className="text-white font-light">FastAPI, Node.js, Express.js, RESTful APIs, GraphQL</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Frontend</span>
-                  <span className="text-white font-light">React Native, Expo, React.js, Vue.js</span>
+                  <span className="text-white font-light">React.js</span>
                 </div>
                 <div className="tech-category">
-                  <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
-                  <span className="text-white font-light">Node.js, Express.js, GraphQL, MySQL, MongoDB</span>
+                  <span className="text-[#C1C2D3] block mb-1">Monitoring & Tools</span>
+                  <span className="text-white font-light">Grafana, Prometheus, Azure Monitor, GitHub/GitLab CI, Agile</span>
                 </div>
-                
-                
               </div>
             </div>
-          ) : id === 6 ? (
+          
+          //: id === 5 ? (
+          //   <div className="z-10 h-full bg-[#04071D] p-6 rounded-3xl">
+          //     <div className="font-sans text-lg lg:text-2xl font-bold mb-4">Tools & Technologies</div>
+          //     <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm lg:text-base">
+          //       <div className="tech-category">
+          //         <span className="text-[#C1C2D3] block mb-1">Core Languages</span>
+          //         <span className="text-white font-light">Python, JavaScript (React Native, Node.js), SQL, C, C++, PHP</span>
+          //       </div>
+          //       <div className="tech-category">
+          //         <span className="text-[#C1C2D3] block mb-1">AI/ML</span>
+          //         <span className="text-white font-light">Transformers, LangChain, PyTorch, TensorFlow, OpenAI API (ChatGPT), RAG</span>
+          //       </div>
+          //       <div className="tech-category">
+          //         <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
+          //         <span className="text-white font-light">Azure (App Service, Cognitive Services, DevOps), AWS (EC2, S3), Docker, Git, CI/CD</span>
+          //       </div>
+          //       <div className="tech-category">
+          //         <span className="text-[#C1C2D3] block mb-1">AI Tools</span>
+          //         <span className="text-white font-light">Hugging Face, OpenAI API, Vertex AI, NVIDIA NIM</span>
+          //       </div>
+          //       <div className="tech-category">
+          //         <span className="text-[#C1C2D3] block mb-1">Frontend</span>
+          //         <span className="text-white font-light">React Native, Expo, React.js, Vue.js</span>
+          //       </div>
+          //       <div className="tech-category">
+          //         <span className="text-[#C1C2D3] block mb-1">Backend & Databases</span>
+          //         <span className="text-white font-light">Node.js, Express.js, GraphQL, MySQL, MongoDB</span>
+          //       </div>
+                
+                
+          //     </div>
+          //   </div>
+         ) : id === 6 ? (
             <div className="relative h-full w-full overflow-hidden rounded-3xl">
               <BackgroundGradientAnimation>
                 <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">

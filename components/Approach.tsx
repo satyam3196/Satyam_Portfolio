@@ -1,7 +1,11 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+const CanvasRevealEffect = dynamic(
+  () => import("./ui/CanvasRevealEffect").then((mod) => mod.CanvasRevealEffect),
+  { ssr: false }
+);
 
 const Approach = () => {
   return (
@@ -9,44 +13,36 @@ const Approach = () => {
       <h1 className="heading">
         My <span className="text-purple">approach</span>
       </h1>
-      {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        {/* add des prop */}
         <Card
-          title="Research & Strategy"
+          title="Data Discovery & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="Before diving into development, I start with an in-depth analysis of the problem domain. Whether it's designing an AI-driven application or architecting a scalable system, I define clear objectives, assess technical feasibility, and align solutions with business goals."
+          des="I begin by understanding the data landscape — identifying sources, assessing quality, and defining clear analytical objectives. Whether designing an AI pipeline or a forecasting model, I align data strategy with business goals before writing a single line of code."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
             containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
           />
         </Card>
         <Card
-          title="Prototyping & Development"
+          title="Modelling & Development"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once the strategy is set, I move into prototyping and development. Using an agile, iterative approach, I build robust and scalable solutions, whether it's training machine learning models, developing APIs, or crafting dynamic user interfaces. I ensure continuous feedback loops for efficiency and alignment with project needs."
+          des="With the strategy in place, I build iteratively — engineering ETL pipelines, developing machine learning and LLM-powered solutions, and creating dashboards that surface actionable insights. I maintain continuous feedback loops to ensure outputs stay aligned with real-world needs."
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            // change bg-black to bg-pink-900
             containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
             colors={[
-              // change the colors of the
               [255, 166, 158],
               [221, 255, 247],
             ]}
             dotSize={2}
           />
-          {/* Radial gradient for the cute fade */}
-          {/* remove this one */}
-          {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Optimization & Deployment"
+          title="Deployment & Impact"
           icon={<AceternityIcon order="Phase 3" />}
-          des="The final step is refining, optimizing, and deploying the solution. I focus on performance tuning, security, and scalability, ensuring seamless integration and real-world impact. Whether deploying AI models in production or launching full-stack applications, I prioritize efficiency and maintainability."
+          des="The final step is optimizing and deploying solutions that scale. From production AI models and automated reporting workflows to cloud-hosted data platforms, I prioritize reliability, performance, and measurable business impact at every stage."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -58,7 +54,6 @@ const Approach = () => {
     </section>
   );
 };
-
 export default Approach;
 
 const Card = ({

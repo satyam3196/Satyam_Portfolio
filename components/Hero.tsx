@@ -52,12 +52,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Blending Full-Stack Engineering with Next-Generation AI Innovation"
+            words="Blending Data Analytics with Next-Generation AI Engineering"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-             Hi! I&apos;m Satyam Sharma — an engineer at the intersection of AI and full-stack development, building scalable applications that connect machine learning, cloud infrastructure, and real-world impact.</p>
+             Hi! I&apos;m Satyam Sharma —  a Data Analyst and AI Engineer with 5+ years of experience, building intelligent systems that turn complex data into actionable insights and scalable AI-powered solutions.</p>
 
           <a href="#about">
             <MagicButton
