@@ -52,12 +52,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Blending Data Analytics with Next-Generation AI Engineering"
+            words="Building Production-Grade AI Systems with LLMs and Scalable Data Pipelines"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-             Hi! I&apos;m Satyam Sharma —  a Data Analyst and AI Engineer with 5+ years of experience, building intelligent systems that turn complex data into actionable insights and scalable AI-powered solutions.</p>
+             Hi, I&apos;m Satyam Sharma — an AI Engineer with 5+ years of experience designing and deploying intelligent systems powered by LLMs, RAG architectures, and cloud infrastructure. I build end-to-end AI solutions that generate insights, automate decisions, and deliver real-world impact.</p>
 
           <a href="#about">
             <MagicButton
