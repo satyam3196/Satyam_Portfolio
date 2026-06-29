@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-             Hi, I&apos;m Satyam Sharma — an AI Engineer with 5+ years of experience designing and deploying intelligent systems powered by LLMs, RAG architectures, and cloud infrastructure. I build end-to-end AI solutions that generate insights, automate decisions, and deliver real-world impact.</p>
+             Hi, I&apos;m Satyam Sharma — an AI Consultant & Engineer with 5+ years of experience designing and deploying intelligent systems powered by LLMs, RAG architectures, and cloud infrastructure. I build end-to-end AI solutions that generate insights, automate decisions, and deliver real-world impact.</p>
 
           <a href="#about">
             <MagicButton
