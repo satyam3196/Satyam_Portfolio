@@ -52,12 +52,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Building Production-Grade AI Systems with LLMs and Scalable Data Pipelines"
+            words="Building Production-Grade Agentic AI Systems for the Enterprise"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-             Hi, I&apos;m Satyam Sharma — an AI Consultant & Engineer with 5+ years of experience designing and deploying intelligent systems powered by LLMs, RAG architectures, and cloud infrastructure. I build end-to-end AI solutions that generate insights, automate decisions, and deliver real-world impact.</p>
+             Hi, I&apos;m Satyam Sharma — an AI Consultant & Engineer with 5+ years designing and deploying intelligent systems powered by LLMs, AI agents, and RAG architectures. I build the layer where AI stops being a demo and starts being infrastructure: agent frameworks, tool ecosystems, human-in-the-loop controls, and the pipelines that hold it all up.</p>
 
           <a href="#about">
             <MagicButton

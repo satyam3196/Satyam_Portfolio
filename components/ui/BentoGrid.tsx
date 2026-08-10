@@ -165,7 +165,7 @@ export const BentoGridItem = ({
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">AI Integration</span>
-                  <span className="text-white font-light">ChatGPT API, Hugging Face, Azure Cognitive Services, NVIDIA NIM</span>
+                  <span className="text-white font-light">Microsoft Foundry, LangGraph, Hugging Face, Azure Cognitive Services</span>
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Cloud & DevOps</span>
@@ -185,7 +185,7 @@ export const BentoGridItem = ({
                 </div>
                 <div className="tech-category">
                   <span className="text-[#C1C2D3] block mb-1">Monitoring & Tools</span>
-                  <span className="text-white font-light">Grafana, Prometheus, Azure Monitor, GitHub/GitLab CI, Agile</span>
+                  <span className="text-white font-light">Grafana, Prometheus, Azure App Insights, GitHub/GitLab CI, Agile</span>
                 </div>
               </div>
             </div>
